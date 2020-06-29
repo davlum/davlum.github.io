@@ -1,3 +1,7 @@
 theme: jekyll-theme-slate
+
 title: David Lum's Blog
-Description: See title.
+
+excerpt_length: 50
+
+title-separator: "-"
