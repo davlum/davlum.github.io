@@ -2,8 +2,6 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
-
 <div class="container-md">
   <div class="row">
     <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
@@ -48,9 +46,6 @@ layout: base
         </div>
       {% endif %}
 
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
 
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
@@ -64,7 +59,6 @@ layout: base
         </li>
         {% endif %}
       </ul>
-      {% include comments.html %}
     </div>
   </div>
 </div>
