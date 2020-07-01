@@ -1,6 +1,7 @@
 ---
 title: Idris 2 on MacOS with Nix
 tags: [nix, idris, macos]
+readtime: false
 ---
 
 [Nixos/nixpkgs#89548](https://github.com/NixOS/nixpkgs/pull/89548) was merged, 
