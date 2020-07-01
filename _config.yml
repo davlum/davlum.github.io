@@ -131,6 +131,7 @@ defaults:
       comments: false # add comments to all blog posts
       social-share: false # add social media sharing buttons to all blog posts
       readtime: true # add estimated reading time on all blog posts
+      show-avatar: false
   -
     scope:
       path: "" # all files
