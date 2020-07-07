@@ -1,5 +1,5 @@
 ---
-title: Idris 2 on MacOS with Nix
+title: Unitudinousness
 tags: [nix, idris, macos]
 readtime: false
 ---
