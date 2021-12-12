@@ -1,0 +1,14 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/iVMo6fi.jpg');
+}
+
+.imgs  {
+    width: 128px;
+    height: 128px;
+}
+
+.center {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
