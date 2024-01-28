@@ -5,14 +5,14 @@
             charset="utf-8">
     <meta
             name="viewport" content="width=device-width, initial-scale=1">
-    <title>Better Motherfucking Website</title>
+    <title>Centre Culturel</title>
     <style type="text/css">
         body {
-            max-width: 800px;
+            max-width: 80%;
             margin: 40px auto;
-            font-size: 16px;
-            line-height: 1.8;
-            text-align: justify;
+            font: 20px;
+            width: 20%;
+            line-height: 2;
             color: rgb(0, 0, 255);
             background-color: rgb(255, 0, 255);
             font-family: fantasy;
@@ -20,6 +20,21 @@
         h1,h2,h3{
             line-height:1;
             color: rgb(94, 251, 110);
+        }
+        @media screen and (max-width : 1280px)
+        {
+            body {
+                width: 40%;
+                font: 16px;
+            }
+        }
+        @media screen and (max-width : 600px)
+        {
+            body {
+                max-width: 100%;
+                width: 80%;
+                font: 16px;
+            }
         }
     </style>
 </head>
@@ -45,7 +60,7 @@
     let count = document.getElementById('count');
     let text_arr = [
         "0", "1", "2", "3", "What are you doing", "Why are you still clicking this", "Stop", "No really",
-        "Stop", "...", "Go Enjoy your life", "Become the best version of you", "Alright, suit yourself"
+        "Stop", "...", "Go enjoy your life", "Become the best version of you", "Alright, suit yourself"
     ];
     let c = 0;
     count.innerText = `The button was clicked ${c} times!`;
