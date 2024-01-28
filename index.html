@@ -1,1 +1,70 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.19d9c203.js"></script><link href="/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta
+            charset="utf-8">
+    <meta
+            name="viewport" content="width=device-width, initial-scale=1">
+    <title>Better Motherfucking Website</title>
+    <style type="text/css">
+        body {
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+            color: rgb(0, 0, 255);
+            background-color: rgb(255, 0, 255);
+            font-family: fantasy;
+        }
+        h1,h2,h3{
+            line-height:1;
+            color: rgb(94, 251, 110);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Cultural Center</h1>
+    <blockquote>"...Is this some sort of cultural center?"<br>
+        &emsp;&emsp;"No, this is just David's apartment."<br>
+        - Actual words spoken by real people
+    </blockquote>
+</header>
+<h2>I hate making Facebook events.</h2>
+<p>But I still need to make one anyway to link it to this page.</p>
+<h2>Upcoming events</h2>
+<ul><li>Feb 2nd at like 9ish</li></ul>
+<h2>Previous events</h2>
+<ul><li>December 9th I think</li></ul>
+<h1>Click counter</h1>
+<button id="button">Click Me!</button>
+<div id="count"></div>
+<script>
+    let button = document.getElementById('button');
+    let count = document.getElementById('count');
+    let text_arr = [
+        "0", "1", "2", "3", "What are you doing", "Why are you still clicking this", "Stop", "No really",
+        "Stop", "...", "Enjoy your life", "Become the best version of you", "Alright, suit yourself"
+    ];
+    let c = 0;
+    count.innerText = `The button was clicked ${c} times!`;
+    button.addEventListener('click', () => {
+        c++;
+        if (c < 4) {
+            count.innerText = `The button was clicked ${c} times!`;
+        } else if (c === 15) {
+            c = 0
+            count.innerText = `The button was clicked ${c} times!`;
+        } else {
+            count.innerText = text_arr[c]
+        }
+
+    })
+</script>
+<br><br>
+<aside>Inspired by <a
+        href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a>
+</aside>
+</body>
+</html>
